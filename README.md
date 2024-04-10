@@ -1,6 +1,7 @@
 # summer-toolkit
 
-The toolkit for ths Summer(https://github.com/intotherealworld/summer)
+The toolkit for ths Summer(https://github.com/intotherealworld/summer). 
+However, it is not only for the summer, then you can use it for your FastAPI base applications if you comply with a little rule for RouterScanner.
 
 summer-toolkit provides several helping modules.
 - RouterScanner: scan and include APIRouters which comply with the naming rule automatically
