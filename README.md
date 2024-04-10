@@ -8,6 +8,11 @@ summer-toolkit provides several helping modules.
 - SimpleJinja2Templates: find the template's absolute path with just a template directory name
 - Environment: properties and phase management module. It can manage properties each deployment phase separately
 
+## Installation
+```shell
+pip install git+https://github.com/intotherealworld/summer-toolkit.git
+```
+
 ## Modules
 
 ### RouterScanner
@@ -25,11 +30,15 @@ example
 ```
 root_router.py
 
+from summer_toolkit.framework.router_scanner import RouterScanner
+
 root_router = APIRouter(tags=['root'])
 ```
 
 ### SimpleJinja2Templates
 ```
+from summer_toolkit.framework.simple_jinja2_templates import SimpleJinja2Templates
+
 # Just use like this, if the directory name for the templates is 'templates'
 templates = SimpleJinja2Templates()
 
@@ -41,6 +50,8 @@ example
 
 ### Environment
 ```
+from summer_toolkit.utility.environment import Environment
+
 env = Environment()
 title = env.get_props('summer.docs.title')
 ```
